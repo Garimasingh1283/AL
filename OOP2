@@ -1,0 +1,36 @@
+public class Human {
+    int age;
+    int salary;
+    String name;
+    static long population;
+//    we have used static keyword here bcoz the pop
+//    is goign to be sqame for all cases of human
+//    it will be common to all
+
+
+    public Human(int age, int salary, String name, long population){
+        this.age=age;
+        this.salary=salary;
+        this.name=name;
+        Human.population=+1;
+//        here it is called by human class , population object that is common
+//        to all and +1 is given fpr a single person count 1
+
+    }
+
+}
+public class Main2 {
+
+    public static void main(String[] args) {
+
+        Human person1= new Human(20,25000,"GARIMA",50000);
+        Human person2= new Human(24,55000,"Gunnu",50000);
+        {
+
+            System.out.println(person1.age);
+            System.out.println(person2.name);
+            System.out.println(Human.population);
+            System.out.println(Human.population);
+        }
+    }
+}
