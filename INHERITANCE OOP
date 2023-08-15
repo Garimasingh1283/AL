@@ -20,11 +20,33 @@ public class OOP3 {
         this.l=l;
         this.w=w;
     }
-}
-public class main {
-    public static void main(String[] args) {
-        OOP3 box= new OOP3(4,7,9);
-        System.out.println(box.l+ " "+ box.h+ " "+ box.w);
+//    inheritance using extends keyword 
+    public static class BoxWeight extends OOP3{
+        double weight;
+
+        BoxWeight(){
+            this.weight=1;
+        }
+        public BoxWeight(double l, double h, double w ,double weight){
+            super(l,h,w);
+// call the parent class constructor: to initialise values
+//            parent in parent class
+            this.weight= weight;
+        }
     }
 }
+
+
+
+import javax.swing.*;
+
+public class main {
+    public static void main(String[] args) {
+//        OOP3 box= new OOP3(4,7,9);
+//        System.out.println(box.l+ " "+ box.h+ " "+ box.w);
+        OOP3.BoxWeight box1= new OOP3.BoxWeight(1,2,3,4);
+        System.out.println(box1.l+" "+box1.h+" "+box1.w+" "+box1.weight);
+    }
+}
+
 
