@@ -1,0 +1,30 @@
+public class OOP3 {
+    double l;
+    double h;
+    double w;
+
+    OOP3(){
+        this.h=1;
+        this.l=1;
+        this.w=1;
+    }
+
+    OOP3(double side){
+        this.h=side;
+        this.l=side;
+        this.w=side;
+    }
+
+    OOP3(double l, double h, double w){
+        this.h=h;
+        this.l=l;
+        this.w=w;
+    }
+}
+public class main {
+    public static void main(String[] args) {
+        OOP3 box= new OOP3(4,7,9);
+        System.out.println(box.l+ " "+ box.h+ " "+ box.w);
+    }
+}
+
