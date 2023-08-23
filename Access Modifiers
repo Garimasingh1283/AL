@@ -1,0 +1,17 @@
+package packageOne;
+public class Base
+{
+    protected void display(){
+        System.out.println("in Base");
+    }
+}
+
+package packageTwo;
+public class Derived extends packageOne.Base{
+    public void show(){
+        new Base().display();       // this is not working
+        new Derived().display();    // is working
+        display();//is working
+    }
+}
+// for protected public and private
