@@ -1,0 +1,33 @@
+class OverloadDemo {
+    void test(double a){
+        System.out.println("Inside test(double) a: " + a);
+    }
+}
+class Overload {
+     public static void main(String args[]) {
+         OverloadDemo ob = new OverloadDemo();
+         int i = 88;
+         ob.test(i);        // this will invoke test(double)
+         ob.test(123.2);    // this will invoke test(double)
+     }
+}
+ // Returning an object.
+       class Test {
+           int a;
+             Test(int i) {
+                 a = i;
+            }
+            Test incrByTen() {
+                Test temp = new Test(a+10);
+                return temp;
+            }
+       }
+       class RetOb {
+         public static void main(String args[]) {
+           Test ob1 = new Test(2);
+           Test ob2;
+           ob2 = ob1.incrByTen();
+           System.out.println("ob1.a: " + ob1.a);
+           System.out.println("ob2.a: " + ob2.a);
+       }
+}
