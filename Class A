@@ -18,3 +18,11 @@ public void setNum(int num){
         this.arr=new int[num];
     }
 }
+public class Main3 {
+    public static void main(String[] args) {
+        A obj = new A(12,"garima");
+
+        obj.getNum();
+        int n= obj.num;
+    }
+}
