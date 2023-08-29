@@ -1,0 +1,13 @@
+public abstract class Parent1 {
+//    we can have some vairables over here also like:
+    int age;
+
+//    we can create a constructor of abstract class as well
+//    and then we will use the super keyword to call the
+//    constructor of son class
+    public Parent1(int age){
+        this.age=age;
+    }
+    abstract void career();
+    abstract void partner();
+}
