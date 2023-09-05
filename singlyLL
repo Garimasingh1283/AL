@@ -1,0 +1,51 @@
+public class LinList {
+    Node head;
+    Node tail;
+    int size;
+
+    public LinList() {
+        this.size = 0;
+        this.head = null;
+
+    }
+
+    public void InsertFirst(int value) {
+        Node newNode = new Node(value);
+        newNode.next = head;
+        head = newNode;
+        size++;
+    }
+
+    public void Display() {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.value + " ==> ");
+            temp = temp.next;
+        }
+        System.out.println("END");
+    }
+
+    class Node {
+        int value;
+        Node next;
+
+        public Node(int value) {
+            this.value = value;
+            this.next = null;
+        }
+    }
+
+        }
+
+
+public class Main {
+    public static void main(String[] args){
+        LinList LL= new LinList();
+        LL.InsertFirst(3);
+        LL.InsertFirst(5);
+        LL.InsertFirst(9);
+        LL.InsertFirst(7);
+       LL.Display();
+
+    }
+}
