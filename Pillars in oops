@@ -1,0 +1,43 @@
+//public class Stdent {
+//    String name;
+//    int roll_num;
+//
+//    Student(String name, int roll_num){
+//        this.name=name;
+//        this.roll_num=roll_num;
+//        System.out.println();
+//
+//    }
+//
+//    public static void main(String[] args) {
+//        Student s= new Student("garima",47);
+//        System.out.println(s.name);
+//        System.out.println(s.roll_num);
+//
+//    }
+public class Pillar{
+    String color;
+    void eat(){
+        System.out.println("eats");
+
+    }
+    void breathe(){
+        System.out.println("breathes");
+    }
+
+//    derived class
+
+   static class mammal extends Pillar{
+        int legs;
+
+        }
+    static class dog extends mammal{
+        String breed;
+    }
+
+    public static void main(String[] args) {
+        dog c= new dog();
+        c.color="red";
+        System.out.println(c.color);
+    }
+}
