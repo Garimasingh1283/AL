@@ -1,0 +1,22 @@
+public class Interfaces {
+    public static void main(String[] args) {
+        Queen q= new Queen();
+        q.moves();
+        King k= new King();
+        k.moves();
+    }
+    interface Chess_player{
+        void moves();
+    }
+   static class Queen implements Chess_player{
+        public void moves(){
+            System.out.println("queen can move right, left, diagonal in all directions");
+
+        }
+    }
+  static  class King implements Chess_player{
+        public void moves(){
+            System.out.println("king can move up,down,left ,right");
+        }
+    }
+}
