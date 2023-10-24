@@ -1,0 +1,30 @@
+public class Abstract {
+    public static void main(String[] args) {
+        Horse h= new Horse();
+        h.walk();
+        h.eat();
+        chicken c= new chicken();
+        c.walk();
+        c.eat();
+
+    }
+   static abstract class Animal{
+        void eat(){
+            System.out.println("animal eats");
+        }
+//   when abstract method is used then, the method won't tell its prop
+//        it will be seen by subclasses
+        abstract void walk();
+    }
+   static class Horse extends Animal{
+        void walk(){
+            System.out.println("on 4 legs");
+        }
+
+    }
+   static class chicken extends Animal{
+        void walk(){
+            System.out.println("on 2 legs");
+        }
+    }
+}
