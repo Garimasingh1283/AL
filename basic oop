@@ -1,0 +1,48 @@
+public class OOPS {
+//    static class Pen{
+//        String color;
+//        int tip;
+//
+//        void setColor(String new_color){
+//            color=new_color;
+//        }
+//        void setTip(int new_tip){
+//            tip=new_tip;
+//        }
+
+       static class Bank_acc{
+            public  String username;
+            protected int Password;
+              void  setPassword(int new_pw){
+                Password=new_pw;
+            }
+            void setUsername(String new_name){
+                  username= new_name;
+            }
+
+            }
+
+
+//        }
+
+        public static void main(String[] args) {
+//            Pen p1= new Pen();
+//
+//            p1.setColor("blue");
+//            System.out.println(p1.color);
+//
+//            p1.setTip(5);
+//            System.out.println(p1.tip);
+
+            Bank_acc b = new Bank_acc();
+            b.setPassword(1234);
+            System.out.println(b.Password);
+            b.setUsername("garima");
+            System.out.println(b.username);
+
+
+
+        }
+
+    }
+
